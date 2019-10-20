@@ -18,7 +18,7 @@ export class AppComponent {
     ];
   }
 
-  onButtonClick() {
-    alert('Hello!');
+  onAddProduct(name: string, description: string) {
+    this.products.push(new Product(this.products.length, name, description));
   }
 }
